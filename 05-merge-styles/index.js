@@ -19,10 +19,8 @@ async function bundleStyle(dir, bundle ) {
     console.error('Error:', error.message);
   }
 }
- 
-  const folderStylePath = path.join(__dirname, 'styles');
   const dst = path.join(__dirname, 'project-dist');
+  const folderStylePath = path.join(__dirname, 'styles');
   const fileBundle  = path.join(dst, 'bundle.css');
 
   bundleStyle(folderStylePath, fileBundle );
-  
