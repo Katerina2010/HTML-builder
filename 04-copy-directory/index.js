@@ -18,7 +18,7 @@ async function copyDir(source, destination) {
       }
     }
   } catch (error) {
-  console.error('Error:', error.message);
+    console.error('Error:', error.message);
   }
 }
 const src = path.join(__dirname, 'files');

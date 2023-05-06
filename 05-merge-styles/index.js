@@ -14,13 +14,13 @@ async function bundleStyle(dir, bundle ) {
         streamBundle.write(currentContent + '\n');
       }
     }
-    console.log(" File bundle.css is ready");
+    console.log('File bundle.css is ready');
   } catch (error) {
     console.error('Error:', error.message);
   }
 }
-  const dst = path.join(__dirname, 'project-dist');
-  const folderStylePath = path.join(__dirname, 'styles');
-  const fileBundle  = path.join(dst, 'bundle.css');
+const dst = path.join(__dirname, 'project-dist');
+const folderStylePath = path.join(__dirname, 'styles');
+const fileBundle  = path.join(dst, 'bundle.css');
 
-  bundleStyle(folderStylePath, fileBundle );
+bundleStyle(folderStylePath, fileBundle );

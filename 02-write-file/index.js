@@ -14,7 +14,7 @@ stdin.on('data', data => {
   } else {
     output.write(dataStr);
   }
-})
+});
 
 process.on('SIGINT', () => {
   stdout.write('Input completed. Goodbye!\n');
